@@ -1,4 +1,4 @@
-package cn.nanchaos.nim.model;
+package cn.nanchaos.nim.model.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

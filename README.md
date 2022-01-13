@@ -92,7 +92,7 @@ message AckMsg {
 ```
 enum MsgSendStatus {
     DELIVERED;
-    READED;
+    READ;
 }
 ```
 
@@ -103,5 +103,4 @@ enum MsgSendStatus {
 先暂停，等待服务器到手
 
 ##### 搭建Zookeeper
-
 
