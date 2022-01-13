@@ -2,7 +2,7 @@ dubbo:
   application:
     name: nim-service
   registry:
-    address: zk://110.42.134.48:2181
+    address: zk://ip:2181
   protocol:
     port: 20880
   scan:
@@ -12,3 +12,12 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+spring:
+  application:
+    name: nim-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: username
+    password: password
+    url: jdbc:mysql://ip:port/nim
