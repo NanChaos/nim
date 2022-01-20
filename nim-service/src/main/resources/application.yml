@@ -16,8 +16,23 @@ mybatis-plus:
 spring:
   application:
     name: nim-service
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: username
-    password: password
-    url: jdbc:mysql://ip:port/nim
+  # datasource:
+    #   driver-class-name: com.mysql.cj.jdbc.Driver
+    #   username: username
+    #  password: password
+    #  url: jdbc:mysql://ip:port/nim
+
+nanchaos:
+  cron: "* * * * * ?"
+  # cron: "0 0 5 31 2 ?"
+  enable:
+    scheduling: true
+  dataCrypto:
+    jobOne: ${JOB_ONE:* * * * * ?}
+    jobTwo: ${JOB_TWO:* * * * * ?}
+
+nim:
+  server:
+    UDP-PORT: ${NIM_SERVER_UDP_PORT:7901}
+    TCP-PORT: ${NIM_SERVER_TCP_PORT:8901}
+    WEBSOCKET-PORT: ${NIM_SERVER_WEBSOCKET_PORT:3000}
