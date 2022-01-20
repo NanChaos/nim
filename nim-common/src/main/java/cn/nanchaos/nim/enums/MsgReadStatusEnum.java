@@ -13,10 +13,18 @@ import lombok.Setter;
  */
 @Getter
 @AllArgsConstructor
-public enum MsgReadStatus {
+public enum MsgReadStatusEnum {
 
+    /**
+     * 已发送
+     */
     DELIVERED("DELIVERED", "已发送"),
+
+    /**
+     * 已阅读
+     */
     READ("READ", "已阅读");
+
     private String code;
     private String msg;
 }

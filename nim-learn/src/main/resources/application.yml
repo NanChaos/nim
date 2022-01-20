@@ -1,0 +1,43 @@
+dubbo:
+  application:
+    name: nim-service
+  registry:
+    address: zk://ip:2181
+  protocol:
+    port: 20880
+  scan:
+    base-packages: cn.nanchaos.nim.service
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+
+spring:
+  application:6
+    name: nim-service
+  # datasource:
+    #   driver-class-name: com.mysql.cj.jdbc.Driver
+    #   username: username
+    #  password: password
+    #  url: jdbc:mysql://ip:port/nim
+  data:
+    mongodb:
+      uri: mongodb://101.37.16.39:27017/nim
+      username: nanchaos@nim
+      password: nanchaos@mongo
+
+nanchaos:
+  cron: "* * * * * ?"
+  # cron: "0 0 5 31 2 ?"
+  enable:
+    scheduling: true
+  dataCrypto:
+    jobOne: ${JOB_ONE:* * * * * ?}
+    jobTwo: ${JOB_TWO:* * * * * ?}
+
+nim:
+  server:
+    UDP-PORT: ${NIM_SERVER_UDP_PORT:7901}
+    TCP-PORT: ${NIM_SERVER_TCP_PORT:8901}
+    WEBSOCKET-PORT: ${NIM_SERVER_WEBSOCKET_PORT:3000}
