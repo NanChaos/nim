@@ -1,17 +1,18 @@
 package cn.nanchaos.nim.user;
 
-
 import cn.nanchaos.nim.response.Result;
 
 /**
  * Default Description
  *
  * @author: nanchaos
- * @time: 2022/1/13
+ * @date: 2022/1/20
+ * @time: 14:48
  */
-public interface UserService {
+public interface NimUserService {
     /**
-     * 用户注册
+     * 用户注册，
+     * 此调用nus提供的api，用户全部注册到nus上
      *
      * @return
      */
@@ -19,6 +20,7 @@ public interface UserService {
 
     /**
      * 用户登录
+     * 此调用nus提供的api，nus负责验证信息
      *
      * @return
      */
@@ -26,6 +28,7 @@ public interface UserService {
 
     /**
      * 用户登出
+     * 此调用nus提供的api，nus负责登出
      *
      * @return
      */
@@ -38,15 +41,30 @@ public interface UserService {
      */
     Result userSoldOut();
 
+
     /**
-     * 用户好友关系详情
+     * 设置用户属性
+     *
+     * @return
+     */
+    Result saveUserMetaData();
+
+    /**
+     * 更新用户属性
+     *
+     * @return
+     */
+    Result updateUserMetaData();
+
+    /**
+     * 用户好友列表关系详情
      *
      * @return
      */
     Result userFriendsShip();
 
     /**
-     * 用户已参加群组详情
+     * 用户已参加群组列表详情
      *
      * @return
      */

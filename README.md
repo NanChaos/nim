@@ -3,6 +3,16 @@ N: nanchaos
 IM: 即时通讯
 这个主要是想将自己学到的技术都融合在一起，也不知道能做多久......
 
+进度：  
+- Already
+  - MongoDB
+  - ElasticSearch
+  - Kafka
+  - netty
+- To Learn
+  - Protocol
+  - Protobuf
+
 ### PART
 #### PART ONE
 主要是记录一些想法, 会很杂乱（预计）
