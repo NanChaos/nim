@@ -14,5 +14,5 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TexMessageBody extends MessageBody {
+public class TextMessageBody extends MessageBody {
 }

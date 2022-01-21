@@ -109,8 +109,25 @@ enum MsgSendStatus {
 #### PART THREE
 上手，这一部分会同步至[nanchaos的个人空间](http://blog.nanchaos.cn), 可以参考一下
 
-###### 搭建Apollo
-先暂停，等待服务器到手
+##### 搭建MySQL
+请见个人文章：  
+[Docker MySQL 部署以及远程访问 - 南巢 · 嗷呜嗷呜~~ (nanchaos.cn)](http://nanchaos.cn/archives/20/)
+
+##### 搭建MongoDB
+请见个人文章：  
+[Docker 部署Mongo - 南巢 · 嗷呜嗷呜~~ (nanchaos.cn)](http://nanchaos.cn/archives/21/)
+
+##### 搭建Apollo
+请见个人文章：  
+[Docker部署Apollo 单机 - 南巢 · 嗷呜嗷呜~~ (nanchaos.cn)](http://nanchaos.cn/archives/19/)
 
 ##### 搭建Zookeeper
+请见个人文章：  
+[Docker 安装 Zookeeper - 南巢 · 嗷呜嗷呜~~ (nanchaos.cn)](http://nanchaos.cn/archives/9/)
 
+##### 搭建ElasticSearch
+请见个人文章：[Docker方式]  
+[ElasticSearch 安装 - 南巢 · 嗷呜嗷呜~~ (nanchaos.cn)](http://nanchaos.cn/archives/14/)
+
+##### 搭建Kafka
+原来的部署出了问题，待更新，待解决....

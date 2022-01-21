@@ -3,8 +3,6 @@ package cn.nanchaos.nim.model.chat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -39,7 +37,12 @@ public class ChatGroupDo implements Serializable {
     /**
      * 群组简介
      */
-    private String groupIntro;
+    private String groupDescription;
+
+    /**
+     * 群组公告
+     */
+    private String groupNotice;
 
     /**
      * 群组类型
