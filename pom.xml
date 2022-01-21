@@ -32,6 +32,7 @@
         <hutool-all.version>5.7.16</hutool-all.version>
         <mysql-connector-java.version>8.0.27</mysql-connector-java.version>
         <netty-all.version>4.1.73.Final</netty-all.version>
+        <apollo-client-config-data.version>1.9.0</apollo-client-config-data.version>
     </properties>
 
     <dependencies>
@@ -79,6 +80,17 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>${netty-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client-config-data</artifactId>
+                <version>${apollo-client-config-data.version}</version>
+            </dependency>
+
+            <!-- Kafka-->
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>

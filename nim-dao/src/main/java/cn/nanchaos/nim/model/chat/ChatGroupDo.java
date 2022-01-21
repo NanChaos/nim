@@ -1,5 +1,6 @@
 package cn.nanchaos.nim.model.chat;
 
+import cn.nanchaos.nim.model.user.GroupAffiliations;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -50,10 +51,40 @@ public class ChatGroupDo implements Serializable {
     private String groupType;
 
     /**
+     * 是否公开
+     */
+    private Boolean publicAccess;
+
+    /**
+     * 加入群组是否需要群主或者群管理员审批
+     */
+    private Boolean joiNeedAudit;
+
+    /**
+     * 是否允许群成员邀请别人加入此群
+     */
+    private Boolean allowInvites;
+
+    /**
+     * 是否全员禁言
+     */
+    private Boolean mute;
+
+    /**
      * ownerId
      * 一般情况下是人持有，但是后期可能会有机构类型，所以为Id，而非Uid
      */
     private Integer ownerId;
+
+    /**
+     * 成员列表
+     */
+    private GroupAffiliations groupAffiliations;
+
+    /**
+     * 成员数目上限
+     */
+    private Integer maxUserSize;
 
     /**
      * 创建时间

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Default Description
@@ -48,6 +49,11 @@ public class ChatRoomDO implements Serializable {
      * 群组类型
      */
     private String groupType;
+
+    /**
+     * 成员列表
+     */
+    private List<Integer> membersUid;
 
     /**
      * 创建时间
